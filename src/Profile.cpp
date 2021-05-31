@@ -171,7 +171,7 @@ void Profile::useFallback()
     setProperty(MouseWheelZoomEnabled, true);
 
     setProperty(KeyBindings, QStringLiteral("default"));
-    setProperty(ColorScheme, QStringLiteral("Solarized")); //use DarkPastels when is start support blue ncurses UI properly
+    setProperty(ColorScheme, QStringLiteral("Otto")); //use DarkPastels when is start support blue ncurses UI properly
     setProperty(Font, QFontDatabase::systemFont(QFontDatabase::FixedFont));
 
     setProperty(HistoryMode, Enum::FixedSizeHistory);
