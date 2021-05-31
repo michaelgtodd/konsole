@@ -153,9 +153,9 @@ void Profile::useFallback()
     // magic path for the fallback profile which is not a valid
     // non-directory file name
     setProperty(Path, QStringLiteral("FALLBACK/"));
-    setProperty(Command, QString::fromUtf8(qgetenv("/bin/bash")));
+    setProperty(Command, QString::fromUtf8("/bin/bash"));
     // See Pty.cpp on why Arguments is populated
-    setProperty(Arguments, QStringList() << QString::fromUtf8(qgetenv("/bin/bash")));
+    setProperty(Arguments, QStringList() << QString::fromUtf8("/bin/bash"));
     setProperty(Icon, QStringLiteral("utilities-terminal"));
     setProperty(Environment, QStringList() << QStringLiteral("TERM=xterm-256color") << QStringLiteral("COLORTERM=truecolor"));
     setProperty(LocalTabTitleFormat, QStringLiteral("%d : %n"));
